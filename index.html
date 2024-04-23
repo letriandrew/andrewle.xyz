@@ -1,13 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andrew's Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="items-left">
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+        </div>
+        <div class="items-right">
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="logo-container">
+        <h1 class="logo">ANDREW LE</h1>
+    </div>
+    <div class="container"></div>
+    <div class="content">
+        <img src="assets/gettyimages-1353678853-612x612.jpg" alt="">
+    </div>
+    <script>
+        ScrollTrigger.create({
+            animation: gsap.from(".logo", {
+                y: "50vh", 
+                scale: 6,
+                yPercent: -50
+            }),
+            scrub: true,
+            trigger: ".content",
+            start: "top bottom",
+            endTrigger: ".content",
+            end: "top center"
+        })
+    </script>
+    <script src="script.js"></script>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+</body>
 </html>
