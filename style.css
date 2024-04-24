@@ -38,6 +38,12 @@ a{
     z-index: 1000;
 }
 
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #efe9d9;
+}
+
 .content{
     width: 100%;
     height: 100vh;
@@ -45,6 +51,11 @@ a{
     position: relative;
     padding: 0 4em;
 }
+
+.container{
+    width: 100%;
+}
+
 
 /* Fonts */
 
