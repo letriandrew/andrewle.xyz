@@ -36,8 +36,8 @@ const rollOnce = () => {
                 isRollingEnabled = false; // Disable rolling after one iteration
             }
 
-            iterations += 1/10;
-        }, 30);
+            iterations += 1/8;
+        }, 40);
     }
 };
 
