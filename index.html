@@ -10,21 +10,43 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <div class="nav">
-        <div class="items-left">
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
+    <nav id="desktop-nav">
+        <div class="nav">
+            <div class="items-left">
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+            </div>
+            <div class="items-right">
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
-        <div class="items-right">
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
+        <div class="logo-container">
+            <a href="/index.html">
+                <h1 class="logo" data-value="ANDREW LE">ANDREW LE</h1>
+            </a>
         </div>
-    </div>
-    <div class="logo-container">
-        <a href="/index.html">
-            <h1 class="logo" data-value="ANDREW LE">ANDREW LE</h1>
-        </a>
-    </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo-container2">
+            <a href="/index.html">
+                <h1 class="logo2" data-value="ANDREW LE">ANDREW LE</h1>
+            </a>
+        </div>
+        <div class = "hamburger-menu">
+            <div class="hamburger-icon"onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+                <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
     <div class="container"></div>
     <div class="content">
         <img src="assets/gettyimages-1353678853-612x612.jpg" alt="">
